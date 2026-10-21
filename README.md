@@ -104,7 +104,15 @@ The other values have theirs in `v1/lineage/` too:
 | `frontage.json` | the BAN's answer behind an OSM place's house number: label, BAN id, distance |
 | `corrections.json` | the observations behind each of the team's addresses, enclosed or opened terraces and removed places |
 
-See docs/plan-data-lineage.md for what comes next (ids that last, what the scoring algorithms learn from).
+Ids that last: a permit renamed at the register gets a new id (its id hashes its point and name),
+an OSM café redrawn as a building goes from a node to a way. Each build maps the ids that disappear
+to those that appear (the same point, the same SIRET a few metres off, the same OSM name close by;
+`scripts/lib/id-map.ts`, against the previous build's `v1/lineage/permits.json`), writes the map
+to `history/<build>.ids.json`, and logs one change of id instead of a removal and an addition; the
+ground truth's exports follow it. Each changelog line for a name, a category, a footprint or a
+skyline carries `why`: the new value's lineage (rule, source, score, what the rule saw), so a
+change and its evidence are read together — what solstice-ground-truth's `tools/evaluate.py`
+scores against the team's verdicts.
 
 ## The numbers against production
 
