@@ -75,6 +75,22 @@ season where the team found the beta right within a tenth of the beta judged (at
 `promote-places.yml` refuses to send it to production: no correction lost, and at most a tenth of
 what was judged right changed. What moved is listed under `reverify`, for the next campaign.
 
+## History: every dataset, every change
+
+Neither channel is force-pushed: each publication is a commit on top of the last, tagged
+(`beta-<UTC time>-<commit>`, `prod-<UTC time>-<fingerprint>`), so every dataset served stays
+retrievable with `git checkout <tag>`; git keeps unchanged files once. Each build logs what it
+changes against the beta it replaces, value by value (`scripts/build-changelog.ts`,
+`scripts/lib/dataset-diff.ts`): `history/<build>.jsonl.gz`, one change a line
+(`{"kind","id","field","op","from","to"}`), and its line in `history/index.json` — inputs (code
+commit, OSM extract, the register's and the team corrections' SHA-256), the build it follows, the
+counts, the tag. `history/` sits beside `v1/`, outside the manifest. A value's history is the
+lines naming its id across builds:
+
+    zcat history/*.jsonl.gz | grep '"id":"t1abc"'
+
+See docs/plan-data-lineage.md for what comes next (each value's provenance, ids that last).
+
 ## The numbers against production
 
 Before a beta is published, `scripts/check-build-metrics.ts` compares its headline numbers with

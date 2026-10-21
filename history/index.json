@@ -1,0 +1,32 @@
+{
+ "_doc": "Every build of this channel: its inputs, the build it followed, its changes counted (history/<id>.jsonl.gz, one a line), and its tag. docs/plan-data-lineage.md in solstice.",
+ "builds": [
+  {
+   "id": "20261021T144803Z-29821cc",
+   "builtAt": "2026-10-21T14:48:03.314Z",
+   "builtFrom": "29821cc6d7b1e19500b82d9342b56dafe86023e0",
+   "inputs": {
+    "osm": [
+     {
+      "extract": "france-latest.osm.pbf",
+      "timestamp": "2026-10-19T20:21:11Z",
+      "read": 192641,
+      "kept": 160492
+     }
+    ],
+    "register": "938bd6a811908935d78148bd28516c3106284f121d3b6fb3c59fce03567f7a0a",
+    "teamCorrections": "e6994c34af4659f6770057ad44e480adf384c69932263b7af96dda2b20a08f80",
+    "sireneEvidence": "de03575c2a444713b4a07dc4d46aea2386dacd2be93c1d874389666be9449bd0"
+   },
+   "previous": {
+    "builtFrom": "7128cd530c55a9f455375a802c6df734c413f577",
+    "generatedAt": "2026-10-21T14:04:38.742Z",
+    "fingerprint": "000e66fbb1cbb9f369b32ab059f188dc5663da2f75f0cba9d5a1b35e258fb97e"
+   },
+   "changes": 0,
+   "counts": {},
+   "tag": "beta-20261021T144803Z-29821cc",
+   "fingerprint": "3d3634438769e5589ba91dd37c14fe6d76c4754f024e7fed804e9e854bf56a83"
+  }
+ ]
+}
