@@ -27,6 +27,33 @@
    "counts": {},
    "tag": "beta-20261021T144803Z-29821cc",
    "fingerprint": "3d3634438769e5589ba91dd37c14fe6d76c4754f024e7fed804e9e854bf56a83"
+  },
+  {
+   "id": "20261021T150049Z-f371338",
+   "builtAt": "2026-10-21T15:00:49.815Z",
+   "builtFrom": "f371338fbffe04b9313327aab901e1435ede8aea",
+   "inputs": {
+    "osm": [
+     {
+      "extract": "france-latest.osm.pbf",
+      "timestamp": "2026-10-19T20:21:11Z",
+      "read": 192641,
+      "kept": 160492
+     }
+    ],
+    "register": "938bd6a811908935d78148bd28516c3106284f121d3b6fb3c59fce03567f7a0a",
+    "teamCorrections": "e6994c34af4659f6770057ad44e480adf384c69932263b7af96dda2b20a08f80",
+    "sireneEvidence": "de03575c2a444713b4a07dc4d46aea2386dacd2be93c1d874389666be9449bd0"
+   },
+   "previous": {
+    "builtFrom": "29821cc6d7b1e19500b82d9342b56dafe86023e0",
+    "generatedAt": "2026-10-21T14:47:25.061Z",
+    "fingerprint": "3d3634438769e5589ba91dd37c14fe6d76c4754f024e7fed804e9e854bf56a83"
+   },
+   "changes": 0,
+   "counts": {},
+   "tag": "beta-20261021T150049Z-f371338",
+   "fingerprint": "233683e8b82f154a3c7432ba621e85a8b3a8588500beb33bc8dde44e7c0a59c7"
   }
  ]
 }

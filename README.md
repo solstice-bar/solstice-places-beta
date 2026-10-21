@@ -89,7 +89,12 @@ lines naming its id across builds:
 
     zcat history/*.jsonl.gz | grep '"id":"t1abc"'
 
-See docs/plan-data-lineage.md for what comes next (each value's provenance, ids that last).
+Each published register name has its lineage in `v1/lineage/names.json` (not downloaded by the
+app): the claim shown and those it replaced — the register's, OSM's by name, a SIRENE rule's,
+the scored matcher's, a hand override, the team's — each with its source (the OSM place's id…),
+its score and what the rule saw (distance, name similarity, the candidates weighed).
+
+See docs/plan-data-lineage.md for what comes next (the other values' provenance, ids that last).
 
 ## The numbers against production
 
