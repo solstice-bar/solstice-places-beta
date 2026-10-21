@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-21T15:00:39.318Z",
+ "generatedAt": "2026-10-21T16:25:38.901Z",
  "prod": "https://solstice-bar.github.io/solstice-places/v1",
  "rows": [
   {
@@ -86,7 +86,7 @@
    "key": "register.categories",
    "label": "register categories",
    "prod": null,
-   "beta": 13987,
+   "beta": 15623,
    "change": null,
    "state": "new"
   },

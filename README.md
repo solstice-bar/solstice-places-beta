@@ -94,7 +94,17 @@ app): the claim shown and those it replaced — the register's, OSM's by name, a
 the scored matcher's, a hand override, the team's — each with its source (the OSM place's id…),
 its score and what the rule saw (distance, name similarity, the candidates weighed).
 
-See docs/plan-data-lineage.md for what comes next (the other values' provenance, ids that last).
+The other values have theirs in `v1/lineage/` too:
+
+| File | Each record says |
+|---|---|
+| `categories.json` | the OSM POI that lent the category, by which tier (name, address, proximity), its distance and name similarity |
+| `skylines.json` | the cell of buildings it was measured against, and from where (the permit's point, or the pavement and how far) |
+| `footprints.json` | how the footprint was drawn (along the façade, or the register's rectangle away from it; the register's dimensions; the wall's distance), or why there is none (display, enclosed, no dimensions, no façade) |
+| `frontage.json` | the BAN's answer behind an OSM place's house number: label, BAN id, distance |
+| `corrections.json` | the observations behind each of the team's addresses, enclosed or opened terraces and removed places |
+
+See docs/plan-data-lineage.md for what comes next (ids that last, what the scoring algorithms learn from).
 
 ## The numbers against production
 
