@@ -1,0 +1,105 @@
+{
+ "generatedAt": "2026-10-21T14:18:29.429Z",
+ "prod": "https://solstice-bar.github.io/solstice-places/v1",
+ "rows": [
+  {
+   "key": "lab.permits",
+   "label": "footprints of register permits",
+   "prod": null,
+   "beta": 17417,
+   "change": null,
+   "state": "new"
+  },
+  {
+   "key": "lab.places",
+   "label": "OSM places measured on the pavement",
+   "prod": null,
+   "beta": 19013,
+   "change": null,
+   "state": "new"
+  },
+  {
+   "key": "names.osm",
+   "label": "register names from OSM",
+   "prod": 10579,
+   "beta": 10586,
+   "change": 0.0006616882503072124,
+   "state": "ok"
+  },
+  {
+   "key": "names.sireneA",
+   "label": "register names by SIRENE rule A",
+   "prod": 725,
+   "beta": 724,
+   "change": -0.001379310344827586,
+   "state": "ok"
+  },
+  {
+   "key": "names.sireneC",
+   "label": "register names by SIRENE rule C",
+   "prod": 333,
+   "beta": 336,
+   "change": 0.009009009009009009,
+   "state": "ok"
+  },
+  {
+   "key": "names.total",
+   "label": "register names",
+   "prod": 11982,
+   "beta": 11997,
+   "change": 0.0012518778167250877,
+   "state": "ok"
+  },
+  {
+   "key": "places.frontage",
+   "label": "OSM places with a street number",
+   "prod": 16432,
+   "beta": 16453,
+   "change": 0.0012779941577409932,
+   "state": "ok"
+  },
+  {
+   "key": "places.skyline",
+   "label": "OSM places with a skyline",
+   "prod": 159258,
+   "beta": 159350,
+   "change": 0.0005776789862989614,
+   "state": "ok"
+  },
+  {
+   "key": "places.terrace",
+   "label": "OSM places with a terrace",
+   "prod": 30759,
+   "beta": 30849,
+   "change": 0.0029259728859845897,
+   "state": "ok"
+  },
+  {
+   "key": "places.total",
+   "label": "OSM places",
+   "prod": 159263,
+   "beta": 159355,
+   "change": 0.0005776608502916559,
+   "state": "ok"
+  },
+  {
+   "key": "register.categories",
+   "label": "register categories",
+   "prod": null,
+   "beta": 13987,
+   "change": null,
+   "state": "new"
+  },
+  {
+   "key": "register.skylines",
+   "label": "register skylines",
+   "prod": null,
+   "beta": 24043,
+   "change": null,
+   "state": "new"
+  }
+ ],
+ "pass": true,
+ "tolerance": 0.02,
+ "minBase": 100
+}
