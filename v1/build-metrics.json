@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-10-21T16:37:33.077Z",
+ "generatedAt": "2026-10-22T16:23:56.013Z",
  "prod": "https://solstice-bar.github.io/solstice-places/v1",
  "rows": [
   {
    "key": "lab.permits",
    "label": "footprints of register permits",
    "prod": null,
-   "beta": 17417,
+   "beta": 17414,
    "change": null,
    "state": "new"
   },
@@ -46,8 +46,8 @@
    "key": "names.total",
    "label": "register names",
    "prod": 11982,
-   "beta": 11997,
-   "change": 0.0012518778167250877,
+   "beta": 12014,
+   "change": 0.002670672675680187,
    "state": "ok"
   },
   {

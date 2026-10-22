@@ -114,6 +114,50 @@
    "counts": {},
    "tag": "beta-20261021T163757Z-05f70eb",
    "fingerprint": "8461ab1fcc0826f46becdd838ca750a70a0d1a459ab2654e569b84658d62ef39"
+  },
+  {
+   "id": "20261022T162419Z-bd38e1f",
+   "builtAt": "2026-10-22T16:24:19.676Z",
+   "builtFrom": "bd38e1f43b32107d4f5c55f17fff4fce0f2a3c58",
+   "inputs": {
+    "osm": [
+     {
+      "extract": "france-latest.osm.pbf",
+      "timestamp": "2026-10-19T20:21:11Z",
+      "read": 192641,
+      "kept": 160492
+     }
+    ],
+    "register": "938bd6a811908935d78148bd28516c3106284f121d3b6fb3c59fce03567f7a0a",
+    "teamCorrections": "c9efceddf46f15f8ad98ada64d646cacdd1e491378e04cfad0a88e9508588352",
+    "sireneEvidence": "de03575c2a444713b4a07dc4d46aea2386dacd2be93c1d874389666be9449bd0"
+   },
+   "previous": {
+    "builtFrom": "05f70ebb5b47ea6c7d806595a607606b5948bb24",
+    "generatedAt": "2026-10-21T16:37:27.497Z",
+    "fingerprint": "8461ab1fcc0826f46becdd838ca750a70a0d1a459ab2654e569b84658d62ef39"
+   },
+   "changes": 81,
+   "idsChanged": {
+    "permits": 0,
+    "places": 0
+   },
+   "counts": {
+    "osm.address.added": 1,
+    "osm.name-source.added": 3,
+    "osm.name.added": 3,
+    "osm.removed.added": 13,
+    "permit.enclosed.added": 5,
+    "permit.footprint.added": 4,
+    "permit.footprint.removed": 7,
+    "permit.name-source.added": 14,
+    "permit.name-source.changed": 7,
+    "permit.name.added": 14,
+    "permit.opened.added": 4,
+    "permit.removed.added": 6
+   },
+   "tag": "beta-20261022T162419Z-bd38e1f",
+   "fingerprint": "caa83549b04e025978a802dec4ab5f6adec95ae2d1e2a882cbd78304a9ad665a"
   }
  ]
 }
