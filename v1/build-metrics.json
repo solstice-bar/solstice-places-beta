@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-22T16:23:56.013Z",
+ "generatedAt": "2026-10-22T16:59:37.655Z",
  "prod": "https://solstice-bar.github.io/solstice-places/v1",
  "rows": [
   {
@@ -14,7 +14,7 @@
    "key": "lab.places",
    "label": "OSM places measured on the pavement",
    "prod": null,
-   "beta": 19013,
+   "beta": 18997,
    "change": null,
    "state": "new"
   },
@@ -22,64 +22,64 @@
    "key": "names.osm",
    "label": "register names from OSM",
    "prod": 10579,
-   "beta": 10586,
-   "change": 0.0006616882503072124,
+   "beta": 10579,
+   "change": 0,
    "state": "ok"
   },
   {
    "key": "names.sireneA",
    "label": "register names by SIRENE rule A",
    "prod": 725,
-   "beta": 724,
-   "change": -0.001379310344827586,
+   "beta": 723,
+   "change": -0.002758620689655172,
    "state": "ok"
   },
   {
    "key": "names.sireneC",
    "label": "register names by SIRENE rule C",
    "prod": 333,
-   "beta": 336,
-   "change": 0.009009009009009009,
+   "beta": 334,
+   "change": 0.003003003003003003,
    "state": "ok"
   },
   {
    "key": "names.total",
    "label": "register names",
    "prod": 11982,
-   "beta": 12014,
-   "change": 0.002670672675680187,
+   "beta": 12003,
+   "change": 0.0017526289434151227,
    "state": "ok"
   },
   {
    "key": "places.frontage",
    "label": "OSM places with a street number",
    "prod": 16432,
-   "beta": 16453,
-   "change": 0.0012779941577409932,
+   "beta": 16437,
+   "change": 0.00030428432327166507,
    "state": "ok"
   },
   {
    "key": "places.skyline",
    "label": "OSM places with a skyline",
    "prod": 159258,
-   "beta": 159350,
-   "change": 0.0005776789862989614,
+   "beta": 159258,
+   "change": 0,
    "state": "ok"
   },
   {
    "key": "places.terrace",
    "label": "OSM places with a terrace",
    "prod": 30759,
-   "beta": 30849,
-   "change": 0.0029259728859845897,
+   "beta": 30843,
+   "change": 0.0027309080269189503,
    "state": "ok"
   },
   {
    "key": "places.total",
    "label": "OSM places",
    "prod": 159263,
-   "beta": 159355,
-   "change": 0.0005776608502916559,
+   "beta": 159263,
+   "change": 0,
    "state": "ok"
   },
   {

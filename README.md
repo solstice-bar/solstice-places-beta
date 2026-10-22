@@ -35,6 +35,7 @@ v1/register-horizons.json     the register permits' skylines, and the points mea
 v1/register-categories.json   the register permits' categories (café, bar, restaurant…)
 v1/lab/                       the Labo's terrace footprints, zoom-15 tiles (test builds only)
 v1/ground-truth-check.json    this build against what the team verified: pass or fail, and what to verify again
+v1/quarantine.json            OSM's changes against production waiting for a second extract
 compare/                      beta channel only: where the sun changes against production, and
                               release.json: what the release changes, the draw the team must verify
 ```
@@ -135,8 +136,21 @@ matching itself is replayed on a recorded sample (`scripts/lib/matching-golden.t
 
 `compare/release.json` (`scripts/release-changes.ts`, run by compare-sun.yml) lists what the beta
 changes against production per type — sun beyond 10 %, footprints new or redrawn, places new or
-gone, names, addresses — and a stable, stratified random draw of each (`release-policy.json`: 60
-cases a type to begin with, all of them when there are fewer). The verification desk asks the
-draw (« Avant la production »); `promote-places.yml` refuses the beta until every case drawn is
-verified and none is wrong. Zero errors in 60 random cases bound a type's error rate below 5 % at
-95 %. docs/plan-release-validation.md.
+gone, names, addresses — and a stable, stratified random draw of each (`release-policy.json`:
+enough cases for the error rate's bound to fall below 10 % at 95 %, 29 with no error, 46 with one;
+all of them when there are fewer). The verification desk asks the draw (« Avant la production »);
+`promote-places.yml` refuses the beta until every case drawn is verified and the bound holds. A
+wrong change the team corrected (name, address, terrace, status) does not count against it.
+docs/plan-release-validation.md.
+
+## OSM's changes wait for a second extract
+
+A place OSM added, removed or renamed since production reaches the tiles only when an extract at
+least a week later still has the change (`scripts/quarantine-osm.ts`, after the skylines). On the
+first release checked, one change in seven was OSM's own error — a café deleted though open, one
+added though closed, wrong renames — and such edits are often reverted within weeks. Until then
+the tiles keep production's place, and `v1/quarantine.json` lists each change waiting (`pending`:
+id → `kind` new, gone or name, the extract it was first seen in, `from`, `to`), which the next
+build reads back from the beta channel. A place that only changed id (redrawn from a node to a
+way) passes at once (`redrawn`: old id → new). In practice, OSM's changes reach production a
+month after they appear, with the next monthly extract.
