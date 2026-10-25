@@ -32,6 +32,7 @@ v1/10/{x}/{y}.json            the places in one zoom-10 slippy-map tile
 v1/paris-names.json           names on the sign for Paris's terrace-register places
 v1/paris-questions.json       the questions the app asks readers where a name stays in doubt
 v1/register-horizons.json     the register permits' skylines, and the points measured outside a building
+v1/address-points.json        where each Paris establishment's door stands (BAN): the side a skyline steps out on
 v1/register-categories.json   the register permits' categories (café, bar, restaurant…)
 v1/lab/                       the Labo's terrace footprints, zoom-15 tiles (test builds only)
 v1/ground-truth-check.json    this build against what the team verified: pass or fail, and what to verify again
