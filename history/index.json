@@ -374,6 +374,37 @@
    },
    "tag": "beta-20261025T234230Z-592cf41",
    "fingerprint": "33c26d843845f4f07c5920e329ef7cc7e0a851282a4eda23555e1550710e0ea8"
+  },
+  {
+   "id": "20261025T235514Z-85a93b8",
+   "builtAt": "2026-10-25T23:55:14.678Z",
+   "builtFrom": "85a93b89ed3ba7c5db4d9e9cef6cc94f2b3d0536",
+   "inputs": {
+    "osm": [
+     {
+      "extract": "france-latest.osm.pbf",
+      "timestamp": "2026-10-19T20:21:11Z",
+      "read": 192641,
+      "kept": 160492
+     }
+    ],
+    "register": "938bd6a811908935d78148bd28516c3106284f121d3b6fb3c59fce03567f7a0a",
+    "teamCorrections": "9bd99d72a6740267d0fdc0dda46fc0f722ae2131579dcc94b5bd2953862545e7",
+    "sireneEvidence": "de03575c2a444713b4a07dc4d46aea2386dacd2be93c1d874389666be9449bd0"
+   },
+   "previous": {
+    "builtFrom": "592cf41a4ed7519cde7d0f64aa0c39e20b19a741",
+    "generatedAt": "2026-10-25T23:31:42.235Z",
+    "fingerprint": "33c26d843845f4f07c5920e329ef7cc7e0a851282a4eda23555e1550710e0ea8"
+   },
+   "changes": 0,
+   "idsChanged": {
+    "permits": 0,
+    "places": 0
+   },
+   "counts": {},
+   "tag": "beta-20261025T235514Z-85a93b8",
+   "fingerprint": "645d3555a1efe4b9adcc41131ad7e28bdaad080e862c51e6a743231a4f16be3d"
   }
  ]
 }
