@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-26T09:43:49.191Z",
+ "generatedAt": "2026-10-26T12:01:44.675Z",
  "prod": "https://solstice-bar.github.io/solstice-places/v1",
  "rows": [
   {
@@ -14,7 +14,7 @@
    "key": "lab.places",
    "label": "OSM places measured on the pavement",
    "prod": null,
-   "beta": 18997,
+   "beta": 18829,
    "change": null,
    "state": "new"
   },
