@@ -405,6 +405,41 @@
    "counts": {},
    "tag": "beta-20261025T235514Z-85a93b8",
    "fingerprint": "645d3555a1efe4b9adcc41131ad7e28bdaad080e862c51e6a743231a4f16be3d"
+  },
+  {
+   "id": "20261026T094359Z-bf2513a",
+   "builtAt": "2026-10-26T09:43:59.525Z",
+   "builtFrom": "bf2513ae14e891784e0b25863e2a96da82f119af",
+   "inputs": {
+    "osm": [
+     {
+      "extract": "france-latest.osm.pbf",
+      "timestamp": "2026-10-19T20:21:11Z",
+      "read": 192641,
+      "kept": 160492
+     }
+    ],
+    "register": "938bd6a811908935d78148bd28516c3106284f121d3b6fb3c59fce03567f7a0a",
+    "teamCorrections": "9bd99d72a6740267d0fdc0dda46fc0f722ae2131579dcc94b5bd2953862545e7",
+    "sireneEvidence": "de03575c2a444713b4a07dc4d46aea2386dacd2be93c1d874389666be9449bd0"
+   },
+   "previous": {
+    "builtFrom": "85a93b89ed3ba7c5db4d9e9cef6cc94f2b3d0536",
+    "generatedAt": "2026-10-25T23:54:42.868Z",
+    "fingerprint": "645d3555a1efe4b9adcc41131ad7e28bdaad080e862c51e6a743231a4f16be3d"
+   },
+   "changes": 84706,
+   "idsChanged": {
+    "permits": 0,
+    "places": 0
+   },
+   "counts": {
+    "osm.horizon.changed": 74521,
+    "osm.measured-from.changed": 1,
+    "permit.skyline.changed": 10184
+   },
+   "tag": "beta-20261026T094359Z-bf2513a",
+   "fingerprint": "0e6f7d65996175bd8fdc3db0e65eb31f6599a70d30ac96d50b0e1a807a067741"
   }
  ]
 }
