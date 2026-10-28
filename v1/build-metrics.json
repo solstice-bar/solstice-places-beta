@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-10-26T12:01:44.675Z",
+ "generatedAt": "2026-10-28T17:23:49.475Z",
  "prod": "https://solstice-bar.github.io/solstice-places/v1",
  "rows": [
   {
    "key": "lab.permits",
    "label": "footprints of register permits",
    "prod": null,
-   "beta": 17402,
+   "beta": 17399,
    "change": null,
    "state": "new"
   },
@@ -30,8 +30,8 @@
    "key": "names.sireneA",
    "label": "register names by SIRENE rule A",
    "prod": 725,
-   "beta": 723,
-   "change": -0.002758620689655172,
+   "beta": 725,
+   "change": 0,
    "state": "ok"
   },
   {
@@ -46,8 +46,8 @@
    "key": "names.total",
    "label": "register names",
    "prod": 11982,
-   "beta": 12042,
-   "change": 0.005007511266900351,
+   "beta": 12064,
+   "change": 0.006843598731430479,
    "state": "ok"
   },
   {

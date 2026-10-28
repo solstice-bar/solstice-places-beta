@@ -478,6 +478,58 @@
    },
    "tag": "beta-20261026T120159Z-9d91713",
    "fingerprint": "8669c00af6043a4880d94addd8c9fc3db62f139047677bfae4a995f1fd987037"
+  },
+  {
+   "id": "20261028T172404Z-4a29f6f",
+   "builtAt": "2026-10-28T17:24:04.813Z",
+   "builtFrom": "4a29f6fe0bc23c86233b24f3745c49ee909488d0",
+   "inputs": {
+    "osm": [
+     {
+      "extract": "france-latest.osm.pbf",
+      "timestamp": "2026-10-19T20:21:11Z",
+      "read": 192641,
+      "kept": 160492
+     }
+    ],
+    "register": "938bd6a811908935d78148bd28516c3106284f121d3b6fb3c59fce03567f7a0a",
+    "teamCorrections": "a2143dacd47cfb982d9467b70f84abdfd7e0841436cbd833a7a9aba3d558edc3",
+    "sireneEvidence": "de03575c2a444713b4a07dc4d46aea2386dacd2be93c1d874389666be9449bd0"
+   },
+   "previous": {
+    "builtFrom": "9d91713e2eca3910a6656930d0148b3b444fbcfc",
+    "generatedAt": "2026-10-26T11:49:25.010Z",
+    "fingerprint": "8669c00af6043a4880d94addd8c9fc3db62f139047677bfae4a995f1fd987037"
+   },
+   "changes": 10737,
+   "idsChanged": {
+    "permits": 0,
+    "places": 0
+   },
+   "counts": {
+    "osm.frontage.added": 25,
+    "osm.frontage.changed": 389,
+    "osm.frontage.removed": 25,
+    "osm.horizon.changed": 5208,
+    "osm.measured-from.changed": 4218,
+    "osm.removed.added": 1,
+    "permit.enclosed.added": 3,
+    "permit.enclosed.removed": 1,
+    "permit.footprint.added": 4,
+    "permit.footprint.removed": 7,
+    "permit.measured-from.changed": 373,
+    "permit.name-source.added": 33,
+    "permit.name-source.changed": 6,
+    "permit.name-source.removed": 11,
+    "permit.name.added": 33,
+    "permit.name.changed": 3,
+    "permit.name.removed": 11,
+    "permit.opened.added": 3,
+    "permit.removed.added": 10,
+    "permit.skyline.changed": 373
+   },
+   "tag": "beta-20261028T172404Z-4a29f6f",
+   "fingerprint": "6ff221635a4fccceee6c24aa4fd2f6d154cfe271d60a97db761f1d5db14c40c8"
   }
  ]
 }
