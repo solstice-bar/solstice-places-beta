@@ -1,22 +1,22 @@
 {
- "generatedAt": "2026-10-28T17:55:35.126Z",
+ "generatedAt": "2026-10-30T13:54:45.444Z",
  "prod": "https://solstice-bar.github.io/solstice-places/v1",
  "rows": [
   {
    "key": "lab.permits",
    "label": "footprints of register permits",
-   "prod": null,
+   "prod": 17399,
    "beta": 17399,
-   "change": null,
-   "state": "new"
+   "change": 0,
+   "state": "ok"
   },
   {
    "key": "lab.places",
    "label": "OSM places measured on the pavement",
-   "prod": null,
+   "prod": 18829,
    "beta": 18829,
-   "change": null,
-   "state": "new"
+   "change": 0,
+   "state": "ok"
   },
   {
    "key": "names.osm",
@@ -30,32 +30,32 @@
    "key": "names.sireneA",
    "label": "register names by SIRENE rule A",
    "prod": 725,
-   "beta": 725,
-   "change": 0,
+   "beta": 723,
+   "change": -0.002758620689655172,
    "state": "ok"
   },
   {
    "key": "names.sireneC",
    "label": "register names by SIRENE rule C",
-   "prod": 333,
-   "beta": 334,
-   "change": 0.003003003003003003,
+   "prod": 334,
+   "beta": 338,
+   "change": 0.011976047904191617,
    "state": "ok"
   },
   {
    "key": "names.total",
    "label": "register names",
-   "prod": 11982,
-   "beta": 12064,
-   "change": 0.006843598731430479,
+   "prod": 12064,
+   "beta": 12069,
+   "change": 0.0004144562334217507,
    "state": "ok"
   },
   {
    "key": "places.frontage",
    "label": "OSM places with a street number",
-   "prod": 16432,
-   "beta": 16437,
-   "change": 0.00030428432327166507,
+   "prod": 16437,
+   "beta": 16442,
+   "change": 0.00030419176248707184,
    "state": "ok"
   },
   {
@@ -69,9 +69,9 @@
   {
    "key": "places.terrace",
    "label": "OSM places with a terrace",
-   "prod": 30759,
+   "prod": 30843,
    "beta": 30843,
-   "change": 0.0027309080269189503,
+   "change": 0,
    "state": "ok"
   },
   {
@@ -85,18 +85,18 @@
   {
    "key": "register.categories",
    "label": "register categories",
-   "prod": null,
+   "prod": 15623,
    "beta": 15623,
-   "change": null,
-   "state": "new"
+   "change": 0,
+   "state": "ok"
   },
   {
    "key": "register.skylines",
    "label": "register skylines",
-   "prod": null,
+   "prod": 24043,
    "beta": 24043,
-   "change": null,
-   "state": "new"
+   "change": 0,
+   "state": "ok"
   }
  ],
  "pass": true,
