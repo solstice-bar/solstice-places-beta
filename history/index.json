@@ -847,6 +847,76 @@
    "counts": {},
    "tag": "beta-20261105T135850Z-fe58a17",
    "fingerprint": "45d379bca126b30c6758f8339406b34c7c82b256a0cd7401d51c3423697f6e5e"
+  },
+  {
+   "id": "20261105T153159Z-fe58a17",
+   "builtAt": "2026-11-05T15:31:59.362Z",
+   "builtFrom": "fe58a1730ed9e8b677f4b7776157fbff8ae4a20e",
+   "inputs": {
+    "osm": [
+     {
+      "extract": "france-latest.osm.pbf",
+      "timestamp": "2026-11-03T21:24:23Z",
+      "read": 192877,
+      "kept": 160711
+     }
+    ],
+    "register": "938bd6a811908935d78148bd28516c3106284f121d3b6fb3c59fce03567f7a0a",
+    "teamCorrections": "180e734c005c4f654d55e08755b3a7f4adbd7b9855b025b1e3733e6ea9228093",
+    "sireneEvidence": "de03575c2a444713b4a07dc4d46aea2386dacd2be93c1d874389666be9449bd0"
+   },
+   "previous": {
+    "builtFrom": "fe58a1730ed9e8b677f4b7776157fbff8ae4a20e",
+    "generatedAt": "2026-11-05T13:58:01.345Z",
+    "fingerprint": "45d379bca126b30c6758f8339406b34c7c82b256a0cd7401d51c3423697f6e5e"
+   },
+   "changes": 6628,
+   "idsChanged": {
+    "permits": 0,
+    "places": 27
+   },
+   "counts": {
+    "osm.amenity.changed": 75,
+    "osm.city.added": 76,
+    "osm.city.removed": 263,
+    "osm.cuisine.added": 149,
+    "osm.cuisine.changed": 84,
+    "osm.cuisine.removed": 29,
+    "osm.frontage.added": 27,
+    "osm.frontage.changed": 18,
+    "osm.frontage.removed": 16,
+    "osm.horizon.changed": 2886,
+    "osm.id.changed": 27,
+    "osm.measured-from.added": 35,
+    "osm.measured-from.changed": 96,
+    "osm.measured-from.removed": 16,
+    "osm.name.changed": 124,
+    "osm.opening_hours.added": 321,
+    "osm.opening_hours.changed": 222,
+    "osm.opening_hours.removed": 28,
+    "osm.place.added": 214,
+    "osm.place.removed": 121,
+    "osm.point.changed": 81,
+    "osm.postcode.added": 77,
+    "osm.postcode.removed": 277,
+    "osm.street.added": 110,
+    "osm.street.changed": 7,
+    "osm.street.removed": 332,
+    "osm.terrace.changed": 264,
+    "permit.category.added": 40,
+    "permit.category.changed": 255,
+    "permit.category.removed": 20,
+    "permit.footprint.changed": 27,
+    "permit.name-source.added": 15,
+    "permit.name-source.changed": 1,
+    "permit.name-source.removed": 5,
+    "permit.name.added": 15,
+    "permit.name.changed": 2,
+    "permit.name.removed": 5,
+    "permit.skyline.changed": 268
+   },
+   "tag": "beta-20261105T153159Z-fe58a17",
+   "fingerprint": "8c71b14901b98d817fa3469fcf58df4b4912260f403db1c435434e6f46b541ad"
   }
  ]
 }
