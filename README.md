@@ -54,6 +54,11 @@ where someone would sit: the place's point, or 2 m outside the nearest wall when
 inside a building. `register-horizons.json` holds the same for the register's permits, computed in
 the same pass.
 
+`frontage`, on Paris's places whose OSM tags give no house number, is the Base Adresse Nationale's:
+the numbers of the address points within 3 m of the nearest one, nearest first and separated by
+spaces — a café on a corner has one on each street (« 88 18 »). It tells a café from its neighbour
+when the city register is matched against OSM.
+
 `paris-names.json` maps a Paris terrace-register entry (the app's id for it) to the name on its
 sign. The register records what the permit holder filed — often a company's name — so where a
 permit matches an OSM place by name, the OSM name is given; corrections made by hand from users'
@@ -103,7 +108,7 @@ The other values have theirs in `v1/lineage/` too:
 | `categories.json` | the OSM POI that lent the category, by which tier (name, address, proximity), its distance and name similarity |
 | `skylines.json` | the cell of buildings it was measured against, and from where (the permit's point, or the pavement and how far) |
 | `footprints.json` | how the footprint was drawn (along the façade, or the register's rectangle away from it; the register's dimensions; the wall's distance), or why there is none (display, enclosed, no dimensions, no façade) |
-| `frontage.json` | the BAN's answer behind an OSM place's house number: label, BAN id, distance |
+| `frontage.json` | the BAN address points behind an OSM place's house numbers, nearest first (a corner has one per street): label, BAN id, distance |
 | `corrections.json` | the observations behind each of the team's addresses, enclosed or opened terraces and removed places |
 
 Ids that last: a permit renamed at the register gets a new id (its id hashes its point and name),

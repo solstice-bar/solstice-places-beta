@@ -1,93 +1,93 @@
 {
- "generatedAt": "2026-11-03T13:59:45.789Z",
+ "generatedAt": "2026-11-05T11:14:52.986Z",
  "prod": "https://solstice-bar.github.io/solstice-places/v1",
  "rows": [
   {
    "key": "lab.permits",
    "label": "footprints of register permits",
    "prod": 17399,
-   "beta": 17399,
-   "change": 0,
+   "beta": 17398,
+   "change": -0.000057474567503879534,
    "state": "ok"
   },
   {
    "key": "lab.places",
    "label": "OSM places measured on the pavement",
    "prod": 18829,
-   "beta": 18849,
-   "change": 0.0010621913006532476,
+   "beta": 18829,
+   "change": 0,
    "state": "ok"
   },
   {
    "key": "names.osm",
    "label": "register names from OSM",
    "prod": 10579,
-   "beta": 10587,
-   "change": 0.0007562151432082428,
+   "beta": 10579,
+   "change": 0,
    "state": "ok"
   },
   {
    "key": "names.sireneA",
    "label": "register names by SIRENE rule A",
    "prod": 725,
-   "beta": 720,
-   "change": -0.006896551724137931,
+   "beta": 783,
+   "change": 0.08,
    "state": "ok"
   },
   {
    "key": "names.sireneC",
    "label": "register names by SIRENE rule C",
    "prod": 334,
-   "beta": 338,
-   "change": 0.011976047904191617,
+   "beta": 355,
+   "change": 0.06287425149700598,
    "state": "ok"
   },
   {
    "key": "names.total",
    "label": "register names",
    "prod": 12064,
-   "beta": 12072,
-   "change": 0.000663129973474801,
+   "beta": 12169,
+   "change": 0.008703580901856764,
    "state": "ok"
   },
   {
    "key": "places.frontage",
    "label": "OSM places with a street number",
    "prod": 16437,
-   "beta": 16463,
-   "change": 0.0015817971649327736,
+   "beta": 16559,
+   "change": 0.0074222790046845535,
    "state": "ok"
   },
   {
    "key": "places.skyline",
    "label": "OSM places with a skyline",
    "prod": 159258,
-   "beta": 159351,
-   "change": 0.0005839581057152545,
+   "beta": 159258,
+   "change": 0,
    "state": "ok"
   },
   {
    "key": "places.terrace",
    "label": "OSM places with a terrace",
    "prod": 30843,
-   "beta": 30997,
-   "change": 0.0049930292124631195,
+   "beta": 30843,
+   "change": 0,
    "state": "ok"
   },
   {
    "key": "places.total",
    "label": "OSM places",
    "prod": 159263,
-   "beta": 159356,
-   "change": 0.0005839397725774348,
+   "beta": 159263,
+   "change": 0,
    "state": "ok"
   },
   {
    "key": "register.categories",
    "label": "register categories",
    "prod": 15623,
-   "beta": 15643,
-   "change": 0.0012801638609742047,
+   "beta": 15623,
+   "change": 0,
    "state": "ok"
   },
   {
