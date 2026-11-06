@@ -178,5 +178,9 @@ the tiles keep production's place, and `v1/quarantine.json` lists each change wa
 id → `kind` new, gone or name, the extract it was first seen in, `from`, `to`, and where the place
 stands: `at`, its street, postcode, city and kind), which the next build reads back from the beta
 channel, and the release's draw shows the team ahead (`upcoming`). A place that only changed id (redrawn from a node to a
-way) passes at once (`redrawn`: old id → new). In practice, OSM's changes reach production a
+way) passes at once (`redrawn`: old id → new). A change confirmed stays listed, with `confirmed`
+(the extract that confirmed it), until production has it: every build compares with production
+again, and would otherwise hold it once more. Should a build lose that record, a dispatch with
+`quarantine_from` (an older gh-pages commit of the beta, through raw.githubusercontent.com) gives
+back the extract each change was first seen in. In practice, OSM's changes reach production a
 month after they appear, with the next monthly extract.
