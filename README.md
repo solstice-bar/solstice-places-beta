@@ -91,7 +91,13 @@ changes against the beta it replaces, value by value (`scripts/build-changelog.t
 `scripts/lib/dataset-diff.ts`): `history/<build>.jsonl.gz`, one change a line
 (`{"kind","id","field","op","from","to"}`), and its line in `history/index.json` — inputs (code
 commit, OSM extract, the register's and the team corrections' SHA-256), the build it follows, the
-counts, the tag. `history/` sits beside `v1/`, outside the manifest. A value's history is the
+counts, the tag. Beside it, `history/<build>.edits.json.gz` (`scripts/osm-edits.ts`, `edits` in the
+build's line): the OSM edits of the weeks before its extract, from Geofabrik's daily diffs — every
+version of the elements that are or were places, the buildings edited near them, located — so
+which edit made a change stays known after Geofabrik deletes its diffs (100 days). `history/` sits
+beside `v1/`, outside the manifest. Production also keeps `releases/`: each promotion's
+`compare/release.json`, as `<tag>.json` and `latest.json`, from which the next release's draw
+starts. A value's history is the
 lines naming its id across builds:
 
     zcat history/*.jsonl.gz | grep '"id":"t1abc"'
@@ -141,13 +147,26 @@ matching itself is replayed on a recorded sample (`scripts/lib/matching-golden.t
 ## What a release must have verified
 
 `compare/release.json` (`scripts/release-changes.ts`, run by compare-sun.yml) lists what the beta
-changes against production per type — sun beyond 10 %, footprints new or redrawn, places new or
-gone, names, addresses — and a stable, stratified random draw of each (`release-policy.json`:
-enough cases for the error rate's bound to fall below 10 % at 95 %, 29 with no error, 46 with one;
-all of them when there are fewer). The verification desk asks the draw (« Avant la production »);
-`promote-places.yml` refuses the beta until every case drawn is verified and the bound holds. A
-wrong change the team corrected (name, address, terrace, status) does not count against it.
-docs/plan-release-validation.md.
+changes against production — sun beyond 10 %, footprints new or redrawn, places new or gone,
+names, addresses —, by cause (the mechanism that made the change), and a stable weighted random
+draw of each: enough cases for the share of a cause's changes that are wrong to be bounded under
+10 % at 95 % (`release-policy.json`). The verification desk asks the draw (« Avant la
+production »); `promote-places.yml` refuses the beta until every case drawn is verified within the
+rule. A wrong change the team corrected (name, address, terrace, status) does not count against
+it. Since version 3 (2026-11-06, docs/plan-release-validation.md):
+
+- the bound is the finite population's: a cause of 46 changes needs 20 cases with no error, one of
+  665 needs 28;
+- a cause whose code is production's (a monthly refresh of OSM only) weighs its visible changes
+  by where they are read (Paris twice) and how risky their edit is, counts a changeset behind ten
+  changes or more as one unit (three of its changes verified), and starts with half of what
+  production's last release verified for it (`releases/latest.json`);
+- automatic checks — a name changed only in case or punctuation, an address the BAN puts at the
+  place, a closure its mapper declared, an active establishment of that name in SIRENE, buildings
+  at BD TOPO's height — take a change out of the draw once the team has verified enough of their
+  passes, but for one in ten (`checks` in the report: each check's ledger);
+- `upcoming` draws what the quarantine holds as the next release will, for the team to verify
+  while it waits.
 
 ## OSM's changes wait for a second extract
 
@@ -156,7 +175,8 @@ least a week later still has the change (`scripts/quarantine-osm.ts`, after the 
 first release checked, one change in seven was OSM's own error — a café deleted though open, one
 added though closed, wrong renames — and such edits are often reverted within weeks. Until then
 the tiles keep production's place, and `v1/quarantine.json` lists each change waiting (`pending`:
-id → `kind` new, gone or name, the extract it was first seen in, `from`, `to`), which the next
-build reads back from the beta channel. A place that only changed id (redrawn from a node to a
+id → `kind` new, gone or name, the extract it was first seen in, `from`, `to`, and where the place
+stands: `at`, its street, postcode, city and kind), which the next build reads back from the beta
+channel, and the release's draw shows the team ahead (`upcoming`). A place that only changed id (redrawn from a node to a
 way) passes at once (`redrawn`: old id → new). In practice, OSM's changes reach production a
 month after they appear, with the next monthly extract.
